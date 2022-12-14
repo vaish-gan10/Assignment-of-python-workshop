@@ -1,0 +1,10 @@
+import pandas as pd
+df = pd.read_csv('movies_metadata.csv')
+sm_df = df[['title', 'runtime']]
+r_time = sm_df['runtime']
+print(sm_df)
+print("--------------------------------------------------"
+print("Longest runtime:")
+print(r_time.max())
+print("Shortest runtime:")
+print(r_time.min())
